@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
+}
+body {
+    text-align: center;
+    padding: 30px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+#containerImage {
+    background: url('cognitive.gif');
+    width: 500px;
+    position: relative;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#containerImage img{
+    width: 100%;
+}
+.information {
+    width: 400px;
+    padding: 40px 25px;
+    height: 100%;
+}
+.btn {
+    width: 100%;
+    padding: 12px;
+    outline: none;
+    background: #088677;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 3px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border: 0;
+    display: block;
+    transition: .3s;
+    box-shadow: 0px 2px 2px rgba(0,0,0,.7);
+}
+.btn:hover {
+    background: #14a795;
+    box-shadow: 0px 3px 2px rgba(0,0,0,.7);
+}
+.alert {
+    display: none;
+    margin: 15px 0;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 12px;
+    transition:.3s;
+    box-shadow: 0px -3px 0 rgba(0,0,0,.7) inset;
+}
+.show {
+    display: block !important;
+}
+.no-image {
+    background: #de980d;
+}
+.rectangle {
+    border: 3px solid #2980b9;
+    opacity: .5;
+    cursor: pointer;
+    position: absolute;
+}
+.rectangle:hover , .active {
+    opacity: 1;
+    border: 5px solid #2980b9;
+}
+.error {
+    background: #ad0505;
+}
+.image-data {
+    display: none;
+    text-align: left;
+}
+.image-data p {
+    margin-top:12px;
+}
+#FileChooser {
+    display: none;
+}
+#hideImage {
+    display: none;
+}

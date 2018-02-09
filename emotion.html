@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Azure Cognitive Services Example</title>
+    <link href="https://fonts.googleapis.com/css?family=Exo:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>App Reconocimiento de Emociones</h1>
+    <img src="" id="hideImage">
+    <section class="container">
+        <figure id="containerImage">
+            <img src="cognitive.gif" id="image" alt="">
+        </figure>
+        <div class="information">
+            <button class="btn" id="button">Subir Imagen</button>
+            <div class="alert show no-image">Aún no has seleccionado ninguna imagen!</div>
+            <div class="image-data">
+                <p><strong>Personas Encontradas: </strong> <span id="numberPersons"></span></p>
+                <p><strong>Emoción: </strong> <span id="emotion"></span></p>
+            </div>
+        </div>
+    </section>
+    <div id="rectangle"></div>
+    <input type="file" id="FileChooser" />
+</body>
+<script type="text/javascript" src="code.js"></script>
+</body>
+</html>
