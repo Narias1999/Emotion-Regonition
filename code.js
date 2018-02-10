@@ -42,7 +42,6 @@ filePicker.addEventListener('change', async () => {
     persons = await request()
     document.getElementById('numberPersons').innerHTML = persons.length
     alerta.classList.remove('show')
-    information.classList.remove('show')
     const base64 = await readImage(false)
     image.src = base64
     if(persons.length){
@@ -61,11 +60,15 @@ filePicker.addEventListener('change', async () => {
                     e.target.classList.add('active')
                 })
                 imageParent.appendChild(rectangle)
+                if (!index) {
+                    changePerson(0)
+                    rectangle.classList.add('active')
+                }
             }
-            changePerson(0)
         }
     } else {
         alerta.classList.remove('no-image')
+        information.classList.remove('show')
         alerta.classList.add('error')
         alerta.classList.add('show')
         alerta.innerHTML = 'No se encontraron caras en tu imagen'
